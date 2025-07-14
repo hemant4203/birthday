@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Special message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        body{
+            background: linear-gradient(#e88cc2eb, #e5b7dbe0), url("lastbg.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUpFade {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        #child1 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 0.5s;
+        }
+
+        #child2 {
+            opacity: 0;
+            animation: slideUpFade 1.5s forwards;
+            animation-delay: 1.5s;
+        }
+
+        #child3 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 2.5s;
+        }
+
+        #child4 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 3.5s;
+        }
+
+
+        #parent{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #child2{
+            background-color: rgba(255, 255, 255, 0.466);
+            padding: 25px;
+            border-radius: 12px;
+            line-height: 30px;
+            word-spacing: 6px;
+        }
+
+         #child3{
+            background-color: rgba(255, 255, 255, 0.466);
+            padding: 10px;
+            border-radius: 12px;
+            word-spacing: 6px;
+        }
+
+        h1{
+            font-family: 'Great Vibes', cursive;
+            font-size: 45px;
+            color: #e94ba7fb;
+        }
+
+        p{
+            text-align: center;
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+
+    <body>
+        <div id="parent">
+            <div id="child1">
+                <h1>
+                    A Special message for my Special one
+                </h1>
+            </div>
+            <div id="child2">
+                <p>
+                    Tujyasathi ek special message majhya kadun<br>
+                    khar tar ha message pn khup lahan ahe tujhya sathi<br>
+                    khar tar mala kadat pan nahi hot me kay bolto ahe<br>
+                    pn tari me try kela ahe majhya feelings sangnyacha<br>
+                    purn nahi pn thodya feelings jya sathi shabd suchale
+                </p>
+            </div>
+            <br>
+            <div id="child3">
+                <video src="video.mp4" height="300" controls style="border-radius: 12px;"></video>
+            </div>
+            <br>
+            <div id="child4">
+                <p>
+                    Thank you so much for being the<br>
+                    reason of my happiness everyday
+                </p>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>

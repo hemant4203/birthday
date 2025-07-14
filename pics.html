@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>Pics with Message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        /* Slide in from Left */
+        @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+        }
+
+        /* Slide in from Right */
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Example for Heading */
+        #h1 {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 0.5s;  /* Adjust the delay if needed */
+        }
+
+        /* Example for Button */
+        button {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 6.5s;  /* Button appears later */
+        }
+
+        /* Example usage on your left-side box */
+        #parent1 {
+            opacity: 0;
+            animation: slideInLeft 1s forwards;
+            animation-delay: 1.5s;  /* Change this for timing */
+        }
+
+        /* Example usage on your right-side box */
+        #parent2 {
+            opacity: 0;
+            animation: slideInRight 1s forwards;
+            animation-delay: 3s;  /* Change this for timing */
+        }
+
+        #parent3 {
+            opacity: 0;
+            animation: slideInLeft 1s forwards;
+            animation-delay: 4.5s;  /* Change this for timing */
+        }
+
+        #parent4 {
+            opacity: 0;
+            animation: slideInRight 1s forwards;
+            animation-delay: 6s;  /* Change this for timing */
+        }
+
+        body{
+            background: linear-gradient(#e88cc2fc, #e5b7dbfb), url('background2.jpg');
+            background-size: 40%;
+        }
+
+        #first{
+            text-align: center;
+        }
+
+        #h1{
+            font-family: 'Great Vibes', cursive;
+            color: white;
+            font-size: 42px;
+            word-spacing: 12px;
+        }
+
+        img{
+            border: 12px solid rgba(255, 255, 255, 0.744);
+            border-radius: 10px;
+        }
+
+        h1{
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgba(255, 255, 255, 0.632);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #parent1{
+            display: flex;
+            padding: 22px;
+            align-items: center;
+        }
+
+        #parent3{
+            display: flex;
+            padding: 22px;
+            align-items: center;
+        }
+
+        #parent2{
+            display: flex;
+            padding: 22px;
+            justify-content: right;
+            align-items: center;
+        }
+
+        #parent4{
+            display: flex;
+            padding: 22px;
+            justify-content: right;
+            align-items: center;
+        }
+
+        #text{
+            padding-left: 42px;
+            
+        }
+
+        #text2{
+            padding-right: 42px;
+            
+        }
+
+        button{
+            text-align: center;
+            font-size: 24px;
+            background-color: #f9bee0fc;
+            border: solid #ea2899fc;
+            border-radius: 12px;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            color:#7c3083fc ;
+        }
+    </style>
+
+    <body>
+        <div id="first">
+            <p id="h1">Face that fill's my heart with love!💗</p>
+        </div>
+        <div id="parent1">
+            <div >
+                <img src="pic1.jpg" height="300">
+            </div>
+            <div id="text">
+                <h1>
+                    tujhya sobat pratyek moment ha<br>
+                    magical asto majhya sathi 💟
+                </h1>
+            </div>
+        </div>
+        <div id="parent2">
+            <div id="text2">
+                <h1>
+                    jevha pn tu majhya samor yete me<br>
+                     majhya sarv problems visrun jato😊
+                </h1>
+            </div>
+            <div>
+                <img src="pic2.jpg" height="300"> 
+            </div>
+            
+        </div>
+        <div id="parent3">
+            <div>
+                <img src="pic3.jpg" height="300">
+            </div>
+            <div id="text">
+                <h1>
+                    tujha lahan pana ani sadhe pana<br>
+                    mala khup jast premat padto tujhya💖
+                </h1>
+            </div>
+        </div>
+        <div id="parent4">
+            <div id="text2">
+                <h1>
+                    tu sobat asli ki mala as vatte<br>
+                    jas ki time la pakdun theu😘
+                </h1>
+            </div>
+            <div>
+                <img src="pic4.jpg" height="300">
+            </div>
+        </div>
+        <br><br>
+        <div style="text-align: center;">
+            <a href="memories.html">
+                <button>See our memories 🖼️</button>
+            </a>
+        </div>
+    </body>
+</html>
